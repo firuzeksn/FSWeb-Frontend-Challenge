@@ -1,0 +1,66 @@
+
+import React, { useContext } from 'react';
+import { SiteContext } from '../contexts/SiteContext';
+import { content } from '../data';
+
+const Header = () => {
+  const { isDarkMode, setIsDarkMode, language, setLanguage } = useContext(SiteContext);
+
+  // Mevcut dile göre metinleri çekiyoruz
+  const texts = content[language].header;
+
+  const toggleLanguage = () => {
+    setLanguage(language === 'tr' ? 'en' : 'tr');
+    localStorage.setItem('lang', language === 'tr' ? 'en' : 'tr');
+  };
+
+  return (
+    <header className="flex flex-col gap-4 py-8 px-4 max-w-6xl mx-auto w-full">
+      {/* Üst Kısım: Toggle Butonları */}
+      <div className="flex justify-end items-center gap-4 text-xs font-bold tracking-wider">
+        
+        {/* Dark Mode Toggle */}
+        <div className="flex items-center gap-2 cursor-pointer" onClick={() => setIsDarkMode(!isDarkMode)}>
+          <div className={`w-12 h-6 rounded-full relative transition-colors ${isDarkMode ? 'bg-[#3A3A3A]' : 'bg-brand-purple'}`}>
+            <div className={`absolute top-1 w-4 h-4 rounded-full bg-yellow-400 transition-all ${isDarkMode ? 'right-1' : 'left-1'}`}></div>
+          </div>
+          <span className="text-gray-500 dark:text-gray-400">
+            {isDarkMode ? 'LIGHT MODE' : 'DARK MODE'}
+          </span>
+        </div>
+
+        <span className="text-gray-300">|</span>
+
+        {/* Dil Seçimi */}
+        <div className="cursor-pointer transition-colors" onClick={toggleLanguage}>
+          <span className="text-brand-purple dark:text-dark-text">
+            {language === 'tr' ? 'ENGLISH' : 'TÜRKÇE'}
+          </span>
+          <span className="text-gray-500">{' '}{language === 'tr' ? "'YE GEÇ" : "'S SWITCH"}</span>
+        </div>
+      </div>
+
+      {/* Alt Kısım: Logo ve Navigasyon */}
+      <div className="flex justify-between items-center mt-4">
+        {/* Logo Alanı */}
+        <div className="w-12 h-12 bg-[#EEEBFF] dark:bg-[#4731D3] rounded-full flex items-center justify-center transform rotate-45">
+          <span className="text-brand-purple dark:text-[#8F88FF] font-bold text-xl -rotate-45">A</span>
+        </div>
+
+        {/* Nav Linkleri */}
+        <nav className="flex items-center gap-8 text-gray-500 dark:text-gray-400 font-medium">
+          <a href="#skills" className="hover:text-brand-purple transition-colors">{language === 'tr' ? 'Yetenekler' : 'Skills'}</a>
+          <a href="#projects" className="hover:text-brand-purple transition-colors">{language === 'tr' ? 'Projeler' : 'Projects'}</a>
+          <a 
+            href="mailto:almila@email.com" 
+            className="border border-brand-purple text-brand-purple dark:bg-white dark:text-brand-purple px-6 py-2 rounded-md font-bold hover:bg-brand-purple hover:text-white transition-all"
+          >
+            {language === 'tr' ? 'Beni İşe Al' : 'Hire Me'}
+          </a>
+        </nav>
+      </div>
+    </header>
+  );
+};
+
+export default Header;

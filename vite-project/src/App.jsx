@@ -1,3 +1,24 @@
-<h1 className="text-5xl font-bold text-blue-500 bg-yellow-300 p-4 rounded-xl shadow-2xl">
-  Tailwind v4 Çalışıyor!
-</h1>
+import React from 'react';
+import Header from './components/Header'
+import Hero from './components/Hero'
+import Skills from './components/Skills'
+import Profile from './components/Profile'
+import Projects from './components/Projects'
+import Footer from './components/Footer'
+
+function App() {
+  return (
+    <div className="min-h-screen bg-white dark:bg-dark-bg transition-colors duration-300">
+      <Header />
+      <main>
+        <Hero />
+        <Skills />
+        <Profile />
+        <Projects />
+      </main>
+      <Footer />
+    </div>
+  )
+}
+
+export default App
