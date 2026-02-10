@@ -21,7 +21,7 @@ export const content = {
     profile: {
       title: "Profil",
       basicInfo: {
-        title: "Temel Bilgiler",
+        title: "Profil",
         items: [
           { label: "Doğum Tarihi", value: "24.03.1996" },
           { label: "İkamet Şehri", value: "Ankara" },
@@ -31,14 +31,14 @@ export const content = {
       },
       aboutMe: {
         title: "Hakkımda",
-        p1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, salt laperam aliquam voluptateas niai mollitia.",
-        p2: "Minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!"
+        p1: "Kendimi sürekli geliştirmeye odaklanan, öğrenmeye açık ve sorumluluk sahibi biriyim. Yeni bilgiler edinmek ve bunları pratiğe dökmek benim için büyük bir motivasyon kaynağı.",
+        p2: "Karşılaştığım sorunlara çözüm odaklı yaklaşır, detaylara önem veririm. Takım çalışmasına uyum sağlarken aynı zamanda bireysel olarak da disiplinli ve planlı çalışırım. Hedeflerime ulaşmak için sabırlı ve kararlı bir şekilde ilerlerim."
       }
     },
     projects: [
       {
         title: "Workintech",
-        description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline.",
+        description: "Kullanıcılarınızın hangi çerezleri kabul edip reddedeceğini seçmesine olanak tanıyan, basit, özelleştirilebilir ve minimum kurulum gerektiren bir çerez eklentisi. Bu eklenti, saf JavaScript, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur; git deposu ise kod ve temalarda her türlü özelleştirmeyi mümkün kılar.",
         tags: ["react", "redux", "axios"],
         github: "https://github.com",
         viewSite: "https://google.com",
@@ -46,7 +46,7 @@ export const content = {
       },
       {
         title: "Random Jokes",
-        description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline.",
+        description: "Kullanıcılarınızın hangi çerezleri kabul edip reddedeceğini seçmesine olanak tanıyan, basit, özelleştirilebilir ve minimum kurulum gerektiren bir çerez eklentisi. Bu eklenti, saf JavaScript, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur; git deposu ise kod ve temalarda her türlü özelleştirmeyi mümkün kılar. simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline.",
         tags: ["react", "redux", "axios"],
         github: "https://github.com",
         viewSite: "https://google.com",
@@ -54,7 +54,7 @@ export const content = {
       },
       {
         title: "Journey",
-        description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline.",
+        description: "Kullanıcılarınızın hangi çerezleri kabul edip reddedeceğini seçmesine olanak tanıyan, basit, özelleştirilebilir ve minimum kurulum gerektiren bir çerez eklentisi. Bu eklenti, saf JavaScript, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur; git deposu ise kod ve temalarda her türlü özelleştirmeyi mümkün kılar. simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline.",
         tags: ["react", "redux", "axios"],
         github: "https://github.com",
         viewSite: "https://google.com",
@@ -63,7 +63,7 @@ export const content = {
     ],
     footer: {
       title: "Let’s work together on your next product.",
-      email: "almila@email.com",
+      email: "almilasucode@gmail.com",
       links: [
         { name: "Personal Blog", url: "#" },
         { name: "Github", url: "https://github.com" },
@@ -93,7 +93,7 @@ export const content = {
     profile: {
       title: "Profile",
       basicInfo: {
-        title: "Basic Information",
+        title: "Profile",
         items: [
           { label: "Birthday", value: "24.03.1996" },
           { label: "City", value: "Ankara" },
@@ -103,14 +103,14 @@ export const content = {
       },
       aboutMe: {
         title: "About Me",
-        p1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit...",
-        p2: "Minima accusamus ratione soluta aperiam sit voluptate?"
+        p1: "I am a responsible and self-motivated individual who is always eager to learn and improve. Gaining new knowledge and putting it into practice is a great source of motivation for me. I approach challenges with a solution-oriented mindset and pay close attention to details.",
+        p2: "While I work well in a team environment, I am also disciplined and organized when working independently. I move forward with patience and determination to achieve my goals."
       }
     },
     projects: [
       {
         title: "Workintech",
-        description: "A simple, customizable, minimal setup cookie plugin...",
+        description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
         tags: ["react", "redux", "axios"],
         github: "https://github.com",
         viewSite: "https://google.com",
@@ -118,7 +118,7 @@ export const content = {
       },
       {
         title: "Random Jokes",
-        description: "A simple, customizable, minimal setup cookie plugin...",
+        description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible. simple, customizable, minimal setup cookie plugin...",
         tags: ["react", "redux", "axios"],
         github: "https://github.com",
         viewSite: "https://google.com",
@@ -126,7 +126,7 @@ export const content = {
       },
       {
         title: "Journey",
-        description: "A simple, customizable, minimal setup cookie plugin...",
+        description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
         tags: ["react", "redux", "axios"],
         github: "https://github.com",
         viewSite: "https://google.com",
@@ -135,7 +135,7 @@ export const content = {
     ],
     footer: {
       title: "Let’s work together on your next product.",
-      email: "almila@email.com",
+      email: "almilasucode@gmail.com",
       links: [
         { name: "Personal Blog", url: "#" },
         { name: "Github", url: "https://github.com" },
