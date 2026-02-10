@@ -1,18 +1,15 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  darkMode: 'class', 
+module.exports = {
+  darkMode: 'class', // 1. Bu mutlaka olmalı
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
-     /* colors: {
-        'brand-purple': '#4731d3',
-        'brand-green': '#CBF281',
-        'dark-bg': '#252128',
-        'dark-text': '#AEB1FF',
-      },*/
+      colors: {
+        // 2. Kullandığın 'dark-bg' ismini burada tanımlamalısın
+        'dark-bg': '#252128', 
+      },
     },
   },
   plugins: [],

@@ -23,12 +23,12 @@ const Hero = () => {
         </div>
 
         {/* Ana Başlık */}
-        <h1 className="text-5xl md:text-7xl font-bold text-[#1F2937] dark:text-[#AEB1FF] leading-tight">
+        <h1 className="text-5xl md:text-6xl font-bold text-[#000000] dark:text-[#000000] leading-tight">
           {data.title}
         </h1>
 
         {/* Açıklama Metni */}
-        <p className="text-lg text-[#FFFFFF] dark:text-[#D1D5DB] max-w-lg leading-relaxed">
+        <p className="text-lg text-[#FFFFFF] dark:text-[#5F5F5F] max-w-lg leading-relaxed">
   {data.description}
 </p>
 

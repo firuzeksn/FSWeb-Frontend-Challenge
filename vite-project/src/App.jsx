@@ -8,8 +8,10 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    // 'dark' sınıfı html etiketine eklenince, aşağıdaki dark: sınıfları çalışır.
-    <div className="min-h-screen bg-white dark:bg-dark-bg text-gray-900 dark:text-white transition-colors duration-500">
+    /* bg-white: Light mode rengi
+       dark:bg-[#252128]: Dark mode rengi (Butona basınca aktif olur)
+    */
+    <div className="min-h-screen bg-white dark:bg-[#252128] text-gray-900 dark:text-white transition-colors duration-500">
       <Header />
       <main>
         <Hero />

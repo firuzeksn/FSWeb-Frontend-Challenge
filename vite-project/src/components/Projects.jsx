@@ -26,12 +26,12 @@ const Projects = () => {
         </div>
 
         {/* Proje Başlığı - Mor Renk Güncellendi */}
-        <h3 className="text-3xl font-medium text-[#4731D3] dark:text-[#B7A9FF]">
+        <h3 className="text-3xl font-medium text-[#4731D3] dark:text-[#4731D3]">
           {project.title}
         </h3>
 
         {/* Proje Açıklaması - Gri Renk Güncellendi */}
-        <p className="text-sm text-[#6B7280] dark:text-[#D1D5DB] leading-relaxed">
+        <p className="text-sm text-[#6B7280] dark:text-[#5F5F5F] leading-relaxed">
           {project.description}
         </p>
 

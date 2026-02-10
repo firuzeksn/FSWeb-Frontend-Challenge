@@ -8,7 +8,7 @@ const Profile = () => {
   const data = content[language].profile;
 
   return (
-    <section className="py-20 px-4 max-w-6xl mx-auto w-full">
+    <section className="py-0 px-4 max-w-6xl mx-auto w-full">
      {/* Bölüm Başlığı */}
 <h2 className="text-5xl font-bold text-[#1F2937] dark:text-[#000000] mb-12">
   {data.title}
@@ -18,7 +18,7 @@ const Profile = () => {
   
   {/* Sol Taraf: Temel Bilgiler */}
   <div className="flex-1">
-    <h3 className="text-3xl font-medium text-[#4731D3] dark:text-[#B7A9FF] mb-8">
+    <h3 className="text-3xl font-medium text-[#4731D3] dark:text-[#4731D3] mb-8">
       {data.basicInfo.title}
     </h3>
     
@@ -38,10 +38,10 @@ const Profile = () => {
 
   {/* Sağ Taraf: Hakkımda */}
   <div className="flex-1 flex flex-col gap-6">
-    <h3 className="text-3xl font-medium text-[#4731D3] dark:text-[#B7A9FF]">
+    <h3 className="text-3xl font-medium text-[#4731D3] dark:text-[#4731D3] mb-8">
       {data.aboutMe.title}
     </h3>
-    <div className="text-lg text-[#6B7280] dark:text-[#D1D5DB] leading-relaxed space-y-4">
+    <div className="text-lg text-[#6B7280] dark:text-[#5F5F5F] leading-relaxed space-y-4">
       <p>{data.aboutMe.p1}</p>
       <p>{data.aboutMe.p2}</p>
     </div>

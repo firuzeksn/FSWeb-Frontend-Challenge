@@ -19,12 +19,12 @@ const Skills = () => {
       {skillsData.map((skill, index) => (
         <div key={index} className="flex flex-col gap-4">
       {/* Yetenek Başlığı */}
-      <h3 className="text-3xl font-medium text-[#4731D3] dark:text-[#B7A9FF]">
+      <h3 className="text-3xl font-medium text-[#4731D3] dark:text-[#4731D3]">
         {skill.title}
       </h3>
       
       {/* Yetenek Açıklaması */}
-      <p className="text-[#6B7280] dark:text-[#D1D5DB] leading-relaxed">
+      <p className="text-[#6B7280] dark:text-[#5F5F5F] leading-relaxed">
         {skill.description}
       </p>
     </div>
