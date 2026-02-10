@@ -16,8 +16,8 @@ const Hero = () => {
         
         {/* İnce Mor Çizgi ve İsim */}
         <div className="flex items-center gap-3">
-          <div className="w-12 h-[2px] bg-brand-purple"></div>
-          <span className="text-brand-purple dark:text-dark-text font-medium tracking-widest uppercase">
+          <div className="w-12 h-[2px] bg-[#4731D3]"></div>        
+          <span className="text-[#4731D3] dark:text-[#AEB1FF] font-medium tracking-widest uppercase">            
             Almila Su
           </span>
         </div>
@@ -28,26 +28,38 @@ const Hero = () => {
         </h1>
 
         {/* Açıklama Metni */}
-        <p className="text-lg text-gray-500 dark:text-white max-w-lg leading-relaxed">
-          {data.description}
-        </p>
+        <p className="text-lg text-[#FFFFFF] dark:text-[#D1D5DB] max-w-lg leading-relaxed">
+  {data.description}
+</p>
 
         {/* Butonlar ve Sosyal Medya */}
-        <div className="flex flex-wrap gap-3 mt-4">
-          <button className="bg-brand-purple text-white px-8 py-3 rounded-md font-bold hover:opacity-90 transition-all">
-            {language === 'tr' ? 'Beni İşe Al' : 'Hire Me'}
-          </button>
-          
-          <a href="https://github.com" className="flex items-center gap-2 border border-brand-purple text-brand-purple dark:bg-[#383838] dark:text-[#E1E1FF] px-6 py-3 rounded-md font-bold hover:bg-brand-purple hover:text-white transition-all">
-            <Github size={20} />
-            Github
-          </a>
+        <div className="flex flex-wrap gap-3 mt-4 items-center">
+  {/* HIRE ME (Solid - İçi Dolu) */}
+  <a 
+    href="mailto:almila@email.com" 
+    className="bg-[#4731D3] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#3b29b1] transition-all text-center min-w-[120px]"
+  >
+    {language === 'tr' ? 'Beni İşe Al' : 'Hire Me'}
+  </a>
 
-          <a href="https://linkedin.com" className="flex items-center gap-2 border border-brand-purple text-brand-purple dark:bg-[#383838] dark:text-[#E1E1FF] px-6 py-3 rounded-md font-bold hover:bg-brand-purple hover:text-white transition-all">
-            <Linkedin size={20} />
-            Linkedin
-          </a>
-        </div>
+  {/* GITHUB (Outline - İçi Boş) */}
+  <a 
+    href="https://github.com" 
+    className="flex items-center gap-2 border-2 border-[#4731D3] text-[#4731D3] bg-white px-6 py-[10px] rounded-lg font-bold hover:bg-[#4731D3] hover:text-white transition-all"
+  >
+    <Github size={24} />
+    Github
+  </a>
+
+  {/* LINKEDIN (Outline - İçi Boş) */}
+  <a 
+    href="https://linkedin.com" 
+    className="flex items-center gap-2 border-2 border-[#4731D3] text-[#4731D3] bg-white px-6 py-[10px] rounded-lg font-bold hover:bg-[#4731D3] hover:text-white transition-all"
+  >
+    <Linkedin size={24} />
+    Linkedin
+  </a>
+</div>
       </div>
 
       {/* Sağ Taraf: Profil Fotoğrafı */}
@@ -59,8 +71,6 @@ const Hero = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        {/* Fotoğrafın Arkasındaki Dekoratif Kutu (Görseldeki gibi) */}
-        <div className="absolute top-0 right-0 w-full max-w-[450px] aspect-[4/3] bg-brand-purple rounded-2xl -z-10 translate-x-0 translate-y-0"></div>
       </div>
 
     </section>

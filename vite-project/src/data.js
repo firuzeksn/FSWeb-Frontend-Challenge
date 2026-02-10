@@ -2,7 +2,7 @@ export const content = {
   tr: {
     hero: {
       title: "Yaratıcı düşünür, Minimalizm aşığı",
-      description: "Merhaba, ben Almila. Frontend dünyasında..."
+      description: "Merhaba, ben Almila. Tam yığın geliştiriciyim. Sağlam ve ölçeklenebilir, harika kullanıcı deneyimleri sunan ön uç ürünler geliştirecek bir geliştirici arıyorsanız, gelin benimle iletişime geçin."
     },
     skills: [
       {
@@ -74,7 +74,7 @@ export const content = {
   en: {
     hero: {
       title: "Creative thinker, Minimalism lover",
-      description: "Hi, I'm Almila. In the world of frontend..."
+      description: "Hi, I'm Almila. I'm a full-stack developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Let’s shake hands with me"
     },
     skills: [
       {

@@ -2,9 +2,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Buraya sadece Tailwind ile çözemediğin özel fontlar 
-veya global geçiş efektleri kalmalı */
-body {
-  @apply transition-colors duration-300 antialiased font-sans;
-}
