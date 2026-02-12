@@ -16,7 +16,7 @@ const Header = () => {
         
         {/* Dark Mode Toggle */}
         <div className="flex items-center gap-2 cursor-pointer" onClick={() => {setIsDarkMode(!isDarkMode);}}>
-          <div className={`w-12 h-6 rounded-full relative transition-colors ${isDarkMode ? 'bg-[#252128]' : 'bg-[#4731D3]'}`}>
+          <div className={`w-12 h-6 rounded-full relative transition-colors ${isDarkMode ? 'bg-[#3A3A3A]' : 'bg-[#4731D3]'}`}>
             <div className={`absolute top-1 w-4 h-4 rounded-full bg-yellow-400 transition-all ${isDarkMode ? 'left-1' : 'right-1'}`}></div>
           </div>
           <span className="text-[#777777] dark:text-[#D9D9D9]">

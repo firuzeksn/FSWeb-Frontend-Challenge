@@ -114,7 +114,7 @@ export const content = {
         tags: ["react", "redux", "axios"],
         github: "https://github.com",
         viewSite: "https://google.com",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop"
+        image: "./public/Resim4.png"
       },
       {
         title: "Random Jokes",
@@ -122,7 +122,7 @@ export const content = {
         tags: ["react", "redux", "axios"],
         github: "https://github.com",
         viewSite: "https://google.com",
-        image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop"
+        image: "./public/Resim3.png"
       },
       {
         title: "Journey",
@@ -130,7 +130,7 @@ export const content = {
         tags: ["react", "redux", "axios"],
         github: "https://github.com",
         viewSite: "https://google.com",
-        image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop"
+        image: "./public/Resim2.png"
       }
     ],
     footer: {
