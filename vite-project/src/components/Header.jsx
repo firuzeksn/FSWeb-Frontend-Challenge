@@ -16,8 +16,8 @@ const Header = () => {
         
         {/* Dark Mode Toggle */}
         <div className="flex items-center gap-2 cursor-pointer" onClick={() => {setIsDarkMode(!isDarkMode);}}>
-          <div className={`w-12 h-6 rounded-full relative transition-colors ${isDarkMode ? 'bg-[#4731D3]' : 'bg-[#252128]'}`}>
-            <div className={`absolute top-1 w-4 h-4 rounded-full bg-yellow-400 transition-all ${isDarkMode ? 'right-1' : 'left-1'}`}></div>
+          <div className={`w-12 h-6 rounded-full relative transition-colors ${isDarkMode ? 'bg-[#252128]' : 'bg-[#4731D3]'}`}>
+            <div className={`absolute top-1 w-4 h-4 rounded-full bg-yellow-400 transition-all ${isDarkMode ? 'left-1' : 'right-1'}`}></div>
           </div>
           <span className="text-[#777777] dark:text-[#D9D9D9]">
             {isDarkMode ? 'LIGHT MODE' : 'DARK MODE'}
@@ -28,19 +28,20 @@ const Header = () => {
 
         {/* Dil Seçimi */}
         <div className="cursor-pointer transition-colors" onClick={toggleLanguage}>
-          <span className="text-[#4731D3] dark:text-[#BAB2E7]">
+          <span className="text-[#4731D3] font-bold">
             {language === 'tr' ? 'ENGLISH' : 'TÜRKÇE'}
           </span>
           <span className="text-gray-500">
-            {language === 'tr' ? " 'YE GEÇ" : "'S SWITCH"}
+            {language === 'tr' ? " SWITCH": " 'YE GEÇ" }
           </span>
         </div>
       </div>
       {/* Alt Kısım: Logo ve Navigasyon */}
       <div className="flex justify-between items-center mt-4">
         {/* Logo Alanı */}
-        <div className="w-12 h-12 bg-[#EEEBFF] dark:bg-[#4731D3] rounded-full flex items-center justify-center transform rotate-45">
-  <span className="text-[#4731D3] dark:text-[#8F88FF] font-bold text-xl -rotate-45">
+        
+        <div className="logo w-12 h-12 bg-[#EEEBFF] rounded-full flex items-center justify-center transform rotate-45">
+  <span className="logo-text text-[#7B61FF]  font-bold text-xl -rotate-45">
     A
   </span>
 </div>

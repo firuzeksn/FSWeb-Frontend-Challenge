@@ -24,7 +24,7 @@ const Footer = () => {
             <span className="text-xl">👉</span>
             <a 
               href={`mailto:${data.email}`} 
-              className="text-lg font-medium text-[#CE2829]  hover:opacity-80 transition-opacity underline decoration-1 underline-offset-4"
+              className="person text-lg font-medium text-[#CE2829]  hover:opacity-80 transition-opacity underline decoration-1 underline-offset-4"
             >
               {data.email}
             </a>

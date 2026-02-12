@@ -15,9 +15,9 @@ const Hero = () => {
       <div className="flex-1 flex flex-col items-start gap-8">
         
         {/* İnce Mor Çizgi ve İsim */}
-        <div className="flex items-center gap-3">
-          <div className="w-12 h-[2px] bg-[#4731D3]"></div>        
-          <span className="text-[#4731D3] dark:text-[#AEB1FF] font-medium tracking-widest uppercase">            
+        <div className="person flex items-center gap-3">
+          <div className=" person w-12 h-[2px] bg-[#4731D3]"></div>        
+          <span className="person text-[#4731D3] font-medium tracking-widest uppercase">            
             Almila Su
           </span>
         </div>

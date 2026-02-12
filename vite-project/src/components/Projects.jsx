@@ -38,18 +38,18 @@ const Projects = () => {
         {/* Teknolojik Etiketler - Kenarlık ve Yazı Rengi Güncellendi */}
         <div className="flex flex-wrap gap-2">
           {project.tags.map((tag, i) => (
-            <span key={i} className="border border-[#4731D3] text-[#4731D3] dark:border-[#383838] px-4 py-1 rounded-full text-xs font-bold uppercase">
+            <span key={i} className="tags border border-[#4731D3] text-[#4731D3] px-4 py-1 rounded-full text-xs font-bold uppercase">
               {tag}
             </span>
           ))}
         </div>
 
         {/* Linkler - Alt Çizgi ve Yazı Rengi Güncellendi */}
-        <div className="flex justify-between items-center mt-2 font-bold underline decoration-[#4731D3]  underline-offset-8">
-          <a href={project.github} className="text-[#4731D3] hover:opacity-70 transition-opacity">
+        <div className=" flex justify-between items-center mt-2 font-bold underline decoration-[#4731D3]  underline-offset-8">
+          <a href={project.github} className="projeler text-[#4731D3] hover:opacity-70 transition-opacity">
             GitHub
           </a>
-          <a href={project.viewSite} className="text-[#4731D3]  hover:opacity-70 transition-opacity">
+          <a href={project.viewSite} className="projeler text-[#4731D3]  hover:opacity-70 transition-opacity">
             {language === 'tr' ? 'Siteyi Görüntüle' : 'View Site'}
           </a>
         </div>

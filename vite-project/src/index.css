@@ -16,7 +16,20 @@
   background-color: #252128;
     color: #D1D5DB;
 }
-
+.dark .tags {
+  border-color: #AEBCCF; /* Karanlık modda teknolojik etiketlerin kenarlık rengi */
+  color: #B7AAFF; /* Karanlık modda teknolojik etiketlerin yazı rengi */
+}
+.dark .person {
+  color: #AEBCCF; /* Karanlık modda ince mor çizgi ve isim rengi */
+}
+.dark .projeler {
+  color: #AEBCCF; /* Karanlık modda proje kartlarının arka plan rengi */
+  text-decoration-color: #AEBCCF;
+}
+.dark .logo {
+  background-color: #20136c; /* Karanlık modda logo arka plan rengi */
+}
 .dark .flex.gap-4 {
   color: #AEBCCF; /* Karanlık modda üst menü yazı rengi */
 }
