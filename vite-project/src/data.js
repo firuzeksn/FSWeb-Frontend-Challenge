@@ -46,7 +46,7 @@ export const content = {
       },
       {
         title: "Random Jokes",
-        description: "Kullanıcılarınızın hangi çerezleri kabul edip reddedeceğini seçmesine olanak tanıyan, basit, özelleştirilebilir ve minimum kurulum gerektiren bir çerez eklentisi. Bu eklenti, saf JavaScript, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur; git deposu ise kod ve temalarda her türlü özelleştirmeyi mümkün kılar. simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline.",
+        description: "Kullanıcılarınızın hangi çerezleri kabul edip reddedeceğini seçmesine olanak tanıyan, basit, özelleştirilebilir ve minimum kurulum gerektiren bir çerez eklentisi. Bu eklenti, saf JavaScript, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur; git deposu ise kod ve temalarda her türlü özelleştirmeyi mümkün kılar.",
         tags: ["react", "redux", "axios"],
         github: "https://github.com",
         viewSite: "https://google.com",
@@ -54,7 +54,7 @@ export const content = {
       },
       {
         title: "Journey",
-        description: "Kullanıcılarınızın hangi çerezleri kabul edip reddedeceğini seçmesine olanak tanıyan, basit, özelleştirilebilir ve minimum kurulum gerektiren bir çerez eklentisi. Bu eklenti, saf JavaScript, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur; git deposu ise kod ve temalarda her türlü özelleştirmeyi mümkün kılar. simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline.",
+        description: "Kullanıcılarınızın hangi çerezleri kabul edip reddedeceğini seçmesine olanak tanıyan, basit, özelleştirilebilir ve minimum kurulum gerektiren bir çerez eklentisi. Bu eklenti, saf JavaScript, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur; git deposu ise kod ve temalarda her türlü özelleştirmeyi mümkün kılar.",
         tags: ["react", "redux", "axios"],
         github: "https://github.com",
         viewSite: "https://google.com",
@@ -118,7 +118,7 @@ export const content = {
       },
       {
         title: "Random Jokes",
-        description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible. simple, customizable, minimal setup cookie plugin...",
+        description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
         tags: ["react", "redux", "axios"],
         github: "https://github.com",
         viewSite: "https://google.com",
