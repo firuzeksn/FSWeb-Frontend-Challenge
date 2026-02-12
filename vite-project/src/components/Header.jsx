@@ -1,4 +1,3 @@
-
 import React, { useContext } from 'react';
 import { SiteContext } from '../contexts/SiteContext';
 import { content } from '../data';

@@ -11,7 +11,7 @@ const Footer = () => {
       <footer></footer>
       <div className="max-w-6xl mx-auto w-full flex flex-col gap-12">
         
-        {/* Ana Mesaj - Görseldeki sola hizalı ve geniş başlık */}
+        {/* Ana Mesaj */}
         <h2 className="text-4xl md:text-5xl font-bold text-[#1F2937] dark:text-[#000000] max-w-2xl leading-tight">
           {data.title}
         </h2>
@@ -19,7 +19,7 @@ const Footer = () => {
         {/* İletişim ve Linkler Satırı */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           
-          {/* Sol: Email Linki - Görseldeki kırmızı/pembe tonlu altı çizili mail */}
+          {/* Sol: Email Linki */}
           <div className="flex items-center gap-2">
             <span className="text-xl">👉</span>
             <a 
@@ -30,7 +30,7 @@ const Footer = () => {
             </a>
           </div>
 
-          {/* Sağ: Sosyal Linkler - Görseldeki renkli link yapısı */}
+          {/* Sağ: Sosyal Linkler */}
           <nav className="flex gap-6 font-medium text-lg">
             <a 
               href="#" 

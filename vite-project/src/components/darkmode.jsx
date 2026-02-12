@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 const ThemeToggle = () => {
-  // Temanın açık/kapalı olma durumunu tutan state
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // State her değiştiğinde body sınıfını güncelleyen yan etki
   useEffect(() => {
     if (isDarkMode) {
       document.body.classList.add('dark');

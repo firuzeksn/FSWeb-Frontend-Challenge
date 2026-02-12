@@ -20,7 +20,6 @@ export const SiteProvider = ({ children }) => {
     }
   }, [isDarkMode]);
 
-  // Dil değiştiğinde localStorage'a kaydet
   useEffect(() => {
     localStorage.setItem('lang', language);
   }, [language]);

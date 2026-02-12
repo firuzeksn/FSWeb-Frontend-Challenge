@@ -1,4 +1,3 @@
-
 import React, { useContext } from 'react';
 import { SiteContext } from '../contexts/SiteContext';
 import { content } from '../data';
@@ -16,6 +15,7 @@ const Projects = () => {
   <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
     {projectsData.map((project, index) => (
       <div key={index} className="flex flex-col gap-4">
+
         {/* Proje Görseli */}
         <div className="rounded-xl overflow-hidden aspect-video shadow-lg">
           <img 
@@ -25,17 +25,17 @@ const Projects = () => {
           />
         </div>
 
-        {/* Proje Başlığı - Mor Renk Güncellendi */}
+        {/* Proje Başlığı */}
         <h3 className="text-3xl font-medium text-[#4731D3] dark:text-[#4731D3]">
           {project.title}
         </h3>
 
-        {/* Proje Açıklaması - Gri Renk Güncellendi */}
+        {/* Proje Açıklaması */}
         <p className="text-sm text-[#6B7280] dark:text-[#5F5F5F] leading-relaxed">
           {project.description}
         </p>
 
-        {/* Teknolojik Etiketler - Kenarlık ve Yazı Rengi Güncellendi */}
+        {/* Teknolojik Etiketler */}
         <div className="flex flex-wrap gap-2">
           {project.tags.map((tag, i) => (
             <span key={i} className="tags border border-[#4731D3] text-[#4731D3] px-4 py-1 rounded-full text-xs font-bold uppercase">
@@ -44,7 +44,7 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Linkler - Alt Çizgi ve Yazı Rengi Güncellendi */}
+        {/* Linkler */}
         <div className=" flex justify-between items-center mt-2 font-bold underline decoration-[#4731D3]  underline-offset-8">
           <a href={project.github} className="projeler text-[#4731D3] hover:opacity-70 transition-opacity">
             GitHub

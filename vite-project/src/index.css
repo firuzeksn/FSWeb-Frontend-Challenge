@@ -34,7 +34,7 @@
   color: #AEBCCF; /* Karanlık modda üst menü yazı rengi */
 }
 .dark footer {
-  background-color: #1a161d;
+  background-color: #1a161d; /* Karanlık modda fotter arka plan rengi */
 }
 .dark h1, .dark h2  {
   color: #AEBCCF; /* Karanlık modda başlıkların rengi */

@@ -1,8 +1,7 @@
-
 import React, { useContext } from 'react';
 import { SiteContext } from '../contexts/SiteContext';
 import { content } from '../data';
-import { Github, Linkedin } from 'lucide-react'; // İkonlar için
+import { Github, Linkedin } from 'lucide-react'; 
 
 const Hero = () => {
   const { language } = useContext(SiteContext);
@@ -29,37 +28,37 @@ const Hero = () => {
 
         {/* Açıklama Metni */}
         <p className="text-lg text-[#5F5F5F] max-w-lg leading-relaxed">
-  {data.description}
-</p>
+          {data.description}
+        </p>
 
         {/* Butonlar ve Sosyal Medya */}
         <div className="flex flex-wrap gap-3 mt-4 items-center">
-  {/* HIRE ME (Solid - İçi Dolu) */}
-  <a 
-    href="mailto:almila@email.com" 
-    className="bg-[#4731D3] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#3b29b1] transition-all text-center min-w-[120px]"
-  >
-    {language === 'tr' ? 'Beni İşe Al' : 'Hire Me'}
-  </a>
+        {/* HIRE ME  */}
+        <a 
+          href="mailto:almila@email.com" 
+          className="bg-[#4731D3] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#3b29b1] transition-all text-center min-w-[120px]"
+        >
+          {language === 'tr' ? 'Beni İşe Al' : 'Hire Me'}
+        </a>
 
-  {/* GITHUB (Outline - İçi Boş) */}
-  <a 
-    href="https://github.com" 
-    className="flex items-center gap-2 border-2 border-[#4731D3] text-[#4731D3] bg-white px-6 py-[10px] rounded-lg font-bold hover:bg-[#4731D3] hover:text-white transition-all"
-  >
-    <Github size={24} />
-    Github
-  </a>
+        {/* GITHUB */}
+        <a 
+          href="https://github.com" 
+          className="flex items-center gap-2 border-2 border-[#4731D3] text-[#4731D3] bg-white px-6 py-[10px] rounded-lg font-bold hover:bg-[#4731D3] hover:text-white transition-all"
+        >
+          <Github size={24} />
+          Github
+        </a>
 
-  {/* LINKEDIN (Outline - İçi Boş) */}
-  <a 
-    href="https://linkedin.com" 
-    className="flex items-center gap-2 border-2 border-[#4731D3] text-[#4731D3] bg-white px-6 py-[10px] rounded-lg font-bold hover:bg-[#4731D3] hover:text-white transition-all"
-  >
-    <Linkedin size={24} />
-    Linkedin
-  </a>
-</div>
+        {/* LINKEDIN */}
+        <a 
+          href="https://linkedin.com" 
+          className="flex items-center gap-2 border-2 border-[#4731D3] text-[#4731D3] bg-white px-6 py-[10px] rounded-lg font-bold hover:bg-[#4731D3] hover:text-white transition-all"
+        >
+          <Linkedin size={24} />
+          Linkedin
+        </a>
+      </div>
       </div>
 
       {/* Sağ Taraf: Profil Fotoğrafı */}
