@@ -65,7 +65,7 @@ const Hero = () => {
       <div className="flex-1 relative">
         <div className="relative z-10 w-full max-w-[450px] aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl transform translate-x-4 -translate-y-4">
           <img 
-            src="./public/Resim1.png" 
+            src="/Resim1.png" 
             alt="Profile"
             className="w-full h-full object-cover"
           />
