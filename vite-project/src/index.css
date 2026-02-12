@@ -1,4 +1,34 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+      
+
+/* --- AYDINLIK MOD (Varsayılan) --- */
+.main-wrapper {
+  background-color: #ffffff;
+  color: #1f2937;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+/* --- KARANLIK MOD (Sınıf seçici ile) --- */
+/* Eğer html veya body'de .dark sınıfı varsa .main-wrapper'ı boya */
+.dark .main-wrapper {
+  background-color: #252128;
+    color: #D1D5DB;
+}
+
+.dark .flex.gap-4 {
+  color: #AEBCCF; /* Karanlık modda üst menü yazı rengi */
+}
+.dark footer {
+  background-color: #1a161d;
+}
+.dark h1, .dark h2  {
+  color: #AEBCCF; /* Karanlık modda başlıkların rengi */
+}
+.dark h3 {
+  color: #B7AAFF; /* Karanlık modda alt başlıkların rengi */
+}
+.dark p {
+  color: #D1D5DB; /* Karanlık modda metinlerin rengi */
+}

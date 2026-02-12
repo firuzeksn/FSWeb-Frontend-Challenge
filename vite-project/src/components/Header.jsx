@@ -6,25 +6,20 @@ import { content } from '../data';
 const Header = () => {
   const { isDarkMode, setIsDarkMode, language, setLanguage } = useContext(SiteContext);
 
-  // Mevcut dile göre metinleri çekiyoruz
-  const texts = content[language].header;
-
   const toggleLanguage = () => {
-    setLanguage(language === 'tr' ? 'en' : 'tr');
-    localStorage.setItem('lang', language === 'tr' ? 'en' : 'tr');
+    setLanguage(prev => (prev === 'tr' ? 'en' : 'tr'));
   };
 
   return (
     <header className="flex flex-col gap-4 py-8 px-4 max-w-6xl mx-auto w-full">
-      {/* Üst Kısım: Toggle Butonları */}
       <div className="flex justify-end items-center gap-4 text-xs font-bold tracking-wider">
         
         {/* Dark Mode Toggle */}
-        <div className="flex items-center gap-2 cursor-pointer" onClick={() => setIsDarkMode(!isDarkMode)}>
+        <div className="flex items-center gap-2 cursor-pointer" onClick={() => {setIsDarkMode(!isDarkMode);}}>
           <div className={`w-12 h-6 rounded-full relative transition-colors ${isDarkMode ? 'bg-[#4731D3]' : 'bg-[#252128]'}`}>
-            <div className={`absolute top-1 w-4 h-4 rounded-full bg-white transition-all ${isDarkMode ? 'right-1' : 'left-1'}`}></div>
+            <div className={`absolute top-1 w-4 h-4 rounded-full bg-yellow-400 transition-all ${isDarkMode ? 'right-1' : 'left-1'}`}></div>
           </div>
-          <span className="text-black dark:text-gray-400">
+          <span className="text-[#777777] dark:text-[#D9D9D9]">
             {isDarkMode ? 'LIGHT MODE' : 'DARK MODE'}
           </span>
         </div>
@@ -33,13 +28,14 @@ const Header = () => {
 
         {/* Dil Seçimi */}
         <div className="cursor-pointer transition-colors" onClick={toggleLanguage}>
-          <span className="text-brand-purple dark:text-[#4731d3] font-bold">
+          <span className="text-[#4731D3] dark:text-[#BAB2E7]">
             {language === 'tr' ? 'ENGLISH' : 'TÜRKÇE'}
           </span>
-          <span className="text-gray-500">{' '}{language === 'tr' ? "'YE GEÇ" : "'S SWITCH"}</span>
+          <span className="text-gray-500">
+            {language === 'tr' ? " 'YE GEÇ" : "'S SWITCH"}
+          </span>
         </div>
       </div>
-
       {/* Alt Kısım: Logo ve Navigasyon */}
       <div className="flex justify-between items-center mt-4">
         {/* Logo Alanı */}

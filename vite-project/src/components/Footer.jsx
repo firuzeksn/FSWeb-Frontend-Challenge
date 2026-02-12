@@ -8,6 +8,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#FAF7F2] py-20 px-4">
+      <footer></footer>
       <div className="max-w-6xl mx-auto w-full flex flex-col gap-12">
         
         {/* Ana Mesaj - Görseldeki sola hizalı ve geniş başlık */}
@@ -23,7 +24,7 @@ const Footer = () => {
             <span className="text-xl">👉</span>
             <a 
               href={`mailto:${data.email}`} 
-              className="text-lg font-medium text-[#CE2829] dark:text-[#CE2829] hover:opacity-80 transition-opacity underline decoration-1 underline-offset-4"
+              className="text-lg font-medium text-[#CE2829]  hover:opacity-80 transition-opacity underline decoration-1 underline-offset-4"
             >
               {data.email}
             </a>
@@ -33,7 +34,7 @@ const Footer = () => {
           <nav className="flex gap-6 font-medium text-lg">
             <a 
               href="#" 
-              className="text-[#0A0A14] dark:text-[#000000] hover:opacity-70 transition-colors"
+              className=" hover:opacity-70 transition-colors"
             >
               Personal Blog
             </a>

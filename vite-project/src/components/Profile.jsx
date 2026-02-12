@@ -18,17 +18,17 @@ const Profile = () => {
   
   {/* Sol Taraf: Temel Bilgiler */}
   <div className="flex-1">
-    <h3 className="text-3xl font-medium text-[#4731D3] dark:text-[#4731D3] mb-8">
+    <h3 className="text-3xl font-medium text-[#4731D3]  mb-8">
       {data.basicInfo.title}
     </h3>
     
     <div className="flex flex-col gap-4">
       {data.basicInfo.items.map((item, index) => (
         <div key={index} className="flex gap-4">
-          <span className="font-semibold text-[#000000] dark:text-[#000000] w-1/3">
+          <span className="font-semibold   w-1/3">
             {item.label}
           </span>
-          <span className="text-[#000000] dark:text-[#000000] w-2/3">
+          <span className="  w-2/3">
             {item.value}
           </span>
         </div>

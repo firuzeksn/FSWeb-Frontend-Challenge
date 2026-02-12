@@ -20,6 +20,11 @@ export const SiteProvider = ({ children }) => {
     }
   }, [isDarkMode]);
 
+  // Dil değiştiğinde localStorage'a kaydet
+  useEffect(() => {
+    localStorage.setItem('lang', language);
+  }, [language]);
+
   return (
     <SiteContext.Provider value={{ isDarkMode, setIsDarkMode, language, setLanguage }}>
       {children}
